@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+.card--container {
+  padding: 35px;
+  max-width: 300px;
+  line-height: 1.5;
+}
+.sedan--container {
+  background-color: hsl(31, 77%, 52%);
+}
+.sedan--container > button {
+  color: hsl(31, 77%, 52%);
+}
+.suv--container {
+  background-color: hsl(184, 100%, 22%);
+}
+.suv--container > button {
+  color: hsl(184, 100%, 22%);
+}
+.cruise--container {
+  background-color: hsl(179, 100%, 13%);
+}
+.cruise--container > button {
+  color: hsl(179, 100%, 13%);
+}
+.card--container > img {
+  margin-bottom: 15px;
+}
+
+.inner-text {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 75%;
+}
+button {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin: 10px 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+.title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 15px;
+}
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 481px) {
+  body {
+    height: 100vh;
+  }
+  main {
+    flex-direction: row;
+  }
+}
